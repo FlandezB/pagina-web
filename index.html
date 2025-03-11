@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de una página web para personas mayores</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="registro" class="formulario-container">
+        <h2>Registro</h2>
+        <form id="formRegistro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+    <div id="barra-avance-contenedor">
+        <button id="desplegar-barra">Mostrar Avance</button>
+        <div id="barra-avance" class="oculto">
+            <label for="progreso">Progreso:</label>
+            <progress id="progreso" value="0" max="100"></progress>
+            <span id="porcentaje-progreso">0%</span>
+        </div>
+    </div>
+
+    <div id="contenido" class="oculto">
+        <header>
+            <h1>Bienvenido, <span id="usuario"></span></h1>
+            <p>¡Aprender nunca ha sido tan fácil y divertido!</p>
+        </header>
+
+        <nav>
+            <button onclick="mostrarSeccion('laptop')">Aprender a usar Laptop</button>
+            <button onclick="mostrarSeccion('internet')">Aprender a usar Internet</button>
+            <button onclick="mostrarSeccion('telefono')">Aprender a usar Teléfono</button>
+            <button onclick="mostrarSeccion('actividades')">Actividades</button>
+            <button onclick="mostrarSeccion('cuestionario')">Cuestionario</button>
+            <button onclick="mostrarSeccion('preguntas')">Preguntas Frecuentes</button>
+            <button onclick="mostrarSeccion('recursos')">Recursos Adicionales</button>
+        </nav>
+
+        <section id="laptop" class="oculto">
+            <h1>Componentes de una laptop</h1>
+            <p>Pantalla: Muestra el contenido y permite la interacción con el usuario</p>
+            <p>Teclado: Permite la entrada de datos y comandos </p>    
+            <p>Touchpad: Permite la navegación y el control del cursor </p>
+            <p>Puertos: Permiten la conexión con dispositivos externos como ratones, monitores y unidades de almacenamiento</p>
+            <img src="https://www.wikihow.com/images_en/thumb/3/38/Connect-a-Laptop-to-a-Monitor-Step-7-Version-3.jpg/v4-460px-Connect-a-Laptop-to-a-Monitor-Step-7-Version-3.jpg.webp" alt="Pantalla laptop">
+            <img src="https://www.tiendadecomputoperu.com/images/5CG5510T4R.jpg" alt="Teclado de la laptop"> 
+            <img src="https://img.asmedia.epimg.net/resizer/v2/WO2HWZ7URJKWBJLORRA2ANAHMY.jpg?auth=4a1caa869c01d5aee953344fb9f0dd1a28ddeb754aeb2e26750419eb9f333f2d&width=1472&height=1104&smart=true" alt="Touchpad de la laptop">
+            <img src="https://www.hp.com/es-es/shop/Html/Merch/Images/6H7K6EA-ABE_1_1750x1285.jpg" alt="Puertos de la laptop">
+            <h2>Uso de la Laptop</h2>
+            <p>La principal ventaja de una computadora portátil es la portabilidad. Con la laptop adecuada, tendrás la capacidad 
+             para hacer la mayor parte de lo que puedes hacer con un equipo de desktop, casi en cualquier lugar. 
+             Si por lo general estás lejos de casa, esta flexibilidad puede ser sumamente beneficiosa</p>
+            <img src="https://www.shutterstock.com/image-vector/office-desk-person-concept-man-260nw-2386188575.jpg" alt="Touchpad de la laptop">
+            <h3>Conceptos Básicos</h3>
+            <p>Las computadoras son herramientas extremadamente versátiles. Su enorme capacidad de cálculo y procesamiento permite la ejecución de todo tipo de programas informáticos y, por ende, la realización de todo tipo de tareas.</p>
+            <img src="https://s1.significados.com/foto/computadora-og.jpg?class=ogImageSquare" alt="Conceptos Basicos">
+            <img src="https://darave89.wordpress.com/wp-content/uploads/2013/05/partespc.jpg" alt="Imagen adicional">
+            <h3>Encendido y Apagado</h3>
+            <p>Para encenderla, presiona el botón de encendido. Para apagarla, ve al menú de inicio y selecciona "Apagar".</p>
+            <video src="https://www.youtube.com/watch?v=H-5MfC8NABo" controls></video>
+            <h3>Explorador de archivos</h3>
+            <p>El Explorador de archivos te permite organizar tus archivos y carpetas. Puedes crear nuevas carpetas, mover archivos y buscar archivos por nombre.</p>
+            <video src="https://www.youtube.com/watch?v=K6bSOi_dVaY" controls></video>
+            <img src="https://cerebriti.b-cdn.net/uploads/f842e85fbaf6d0583a5431cd702a3706.png" alt="Explorador de Archivos">
+            <h3>Uso del teclado y mouse</h3>
+            <p>El teclado se utiliza para escribir texto y comandos. El ratón táctil (touchpad) te permite mover el cursor y hacer clic en elementos.</p>
+            <video src="https://www.youtube.com/watch?v=1MihwFiYArE" controls></video>
+            <video src="https://www.youtube.com/watch?v=j9p66-y2h-k" controls></video>
+            <img src="https://toledocds.wordpress.com/wp-content/uploads/2017/04/9aa16223-995f-44f0-9a70-e1a509c89ef7.jpg?w=451&h=427" alt="Uso del teclado y mouse">
+            <img src="https://tecnologia6nd.wordpress.com/wp-content/uploads/2016/08/el-teclado-y-sus-partes-2-638-11.jpg?w=750&h=487" alt="Uso del teclado y mouse">
+            <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+        
+
+        <section id="internet" class="oculto">
+            <h2>Uso del Internet</h2>
+            <p>El Internet es una herramienta que nos brinda muchas ayudas para nuestro trabajo y demás cosas, es una manera por la cual adquirimos conocimientos. El Internet es una herramienta de muchísima ayuda ya que nos permite cubrir varios campos no solo en lo laboral, también en los social y entretenimiento..</p>
+            <img src="https://i.ytimg.com/vi/cK1qHeh1IaE/maxresdefault.jpg" alt="Uso del Internet">
+            <video src="https://www.youtube.com/watch?v=c5jk3BS2XCA" controls></video>
+            <h3>Navegadores Web</h3>
+            <p>Un navegador web es un programa que te permite acceder a páginas web en Internet. Ejemplos comunes son Google Chrome, Mozilla Firefox y Microsoft Edge.</p>
+            <img src="https://edutic.up.edu.pe/wp-content/uploads/2022/02/Google-chrome-logo-mundocuentas-300x150.jpg" alt="Navegadores web">
+            <img src="https://i0.wp.com/webadictos.com/media/2011/08/firefox-6.jpg?fit=400%2C580&ssl=1" alt="Navegadores web">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/T32CT52QLVFU7PELF3QB4NKRHM.jpeg" alt="Navegadores web">
+            <video src="https://www.youtube.com/watch?v=Q9qb217Ph90" controls></video>
+            <h3>Búsqueda de información</h3>
+            <p>Para buscar información, escribe palabras clave en la barra de búsqueda de Google. Por ejemplo, "recetas de cocina fáciles".</p>
+            <img src="https://keepcoding.io/wp-content/uploads/2023/05/image-138.png" alt="Busqueda de informacion">
+            <img src="https://coachparaemprendedores.com/wp-content/uploads/2023/12/Buscar-informacion.png" alt="Busqueda de informacion">
+            <img src="https://img.freepik.com/vector-premium/concepto-busqueda-busqueda-informacion-internet-sitio-web-idea-tecnologia-digital-seo-ilustracion_277904-1870.jpg" alt="Busqueda de informacion">
+            <video src="https://www.youtube.com/watch?v=NcYcVJCMTfo" controls></video>
+            <p><strong>Consejo:</strong> Verifica siempre la fuente de la información para asegurarte de que sea confiable.</p>
+            <video src="https://www.youtube.com/watch?v=KeWzmSD9NW8" controls></video>           
+            <img src="https://3.files.edl.io/08c9/23/06/13/181500-ac73bcec-1fa3-4b50-87c1-66cf2f7a6fbd.jpg" alt="Consejo">
+            <img src="https://becas.ofertaeducativa.org/wp-content/uploads/2023/08/recursos-para-encontrar-informacion-confiable-sobre-becas-de-calidad.jpg" alt="Consejo">
+            <h3>Correo Electrónico</h3>
+            <p>El correo electrónico te permite enviar y recibir mensajes a través de Internet. Puedes usar servicios como Gmail, Outlook o Yahoo Mail.</p>
+            <img src="https://i.blogs.es/d2c784/redactarcorreo/450_1000.jpg" alt="Correo electrónico">
+            <video src="https://www.youtube.com/watch?v=DjyBkMjiS3U" controls></video> 
+            <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+
+        <section id="telefono" class="oculto">
+            <h2>Uso del Teléfono Inteligente</h2>
+            <p>El teléfono celular es sin duda alguna un dispositivo indispensable en la vida cotidiana y trasciende hacia ámbitos más complejos que aquellos que tuvo originalmente (hacer y recibir llamadas). Hoy por hoy su teléfono celular es también un centro de información, comunicación, entretenimiento, incluso útil para navegar por el mundo de las transacciones bursátiles.</p>
+            <iframe src="https://www.ift.org.mx/sites/default/files/contenidogeneral/usuarios-y-audiencias/guiabasicadetelefonoscelulares.pdf" width="800" height="600"></iframe>
+            <img src="https://media.gcflearnfree.org/content/61893e85ee588e0fa4093734_11_08_2021/Partes%20del%20celular.png" alt="Uso del Telefono Inteligente">
+            <img src="https://www.uv.mx/infosegura/files/2018/08/moviles2.png" alt="Uso del Telefono Inteligente">
+            <video src="https://www.youtube.com/watch?v=2b9_AKEYNmg" controls></video> 
+            <h3>Videollamadas</h3>
+            <p>Las videollamadas te permiten comunicarte con personas a través de video y audio. Aplicaciones populares son Zoom, Skype, WhatsApp y Messenger.</p>
+            <img src="https://brandemia.org/contenido/subidas/2022/09/marca-zoom-1200x670.png" alt="Videollamadas">
+            <img src="https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2013/03/9b133-skype.png?ssl=1" alt="Videollamadas">
+            <img src="https://i.insider.com/5f57ecd6e6ff30001d4e79d0?width=700" alt="Videollamadas">
+            <img src="https://cdn-bgp.bluestacks.com/BGP/latam/gametiles_com.facebook.orca.jpg" alt="Videollamadas">
+            <video src="https://www.youtube.com/watch?v=sIgJ-4eLz4g" controls></video> 
+            <h3>Descarga de aplicaciones</h3>
+            <p>Puedes descargar aplicaciones desde la tienda de aplicaciones de tu teléfono (Play Store para Android o App Store para iPhone).</p>
+            <video src="https://www.youtube.com/watch?v=lPIbWB9828k" controls></video> 
+            <img src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/como_usar_android/image/and_l04_p02a_xl.png" alt="Descarga de aplicaciones">
+            <p><strong>Consejo:</strong> Lee las reseñas y calificaciones antes de descargar una aplicación para asegurarte de que sea segura y útil.</p>
+            <h3>Configuración básica</h3>
+            <p>Aprende a configurar el Wi-Fi, el Bluetooth y otras funciones básicas de tu teléfono.</p>
+            <iframe src="https://beconnected.esafety.gov.au/pluginfile.php/27016/mod_resource/content/4/Android_phone_Configuracion_basica_BeConnected_t12_c6_SPA.pdf" width="800" height="600"></iframe>            
+            <img src="https://cdn.shopify.com/s/files/1/0561/9354/8453/files/Guia-para-configurar-dispositivos-android-paso-1.png?v=1673647531" alt="Configuración basica">
+            <video src="https://www.youtube.com/watch?v=cB2tPv71mgA" controls></video> 
+            <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+
+
+        <section id="actividades" class="oculto">
+            <h2>Actividades</h2>
+            <p>Práctica lo aprendido con los siguientes ejercicios.</p>
+
+            <h3>Actividad 1: Reconocer Iconos</h3>
+            <p>¿Qué icono representa un navegador de internet?</p>
+
+            <label>
+                <input type="radio" name="icono1" value="chrome">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/480px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Icono de Chrome" style="width: 20px; height: 20px;">
+                Chrome
+            <label><input type="radio" name="icono1" value="word">
+                 <input type="radio" name="icono1" value="chrome">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" alt="Icono de Chrome" style="width: 20px; height: 20px;">
+                Word
+            <label><input type="radio" name="icono1" value="excel">
+                <input type="radio" name="icono1" value="chrome">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/800px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Icono de Chrome" style="width: 20px; height: 20px;">
+                Exel
+            <button onclick="verificarActividad(1)">Verificar</button>
+            <p id="resultadoActividad1" class="oculto"></p>
+
+            <h3>Actividad 2: Ordenar Pasos</h3>
+            <p>Ordena los pasos para enviar un correo electrónico:</p>
+            <ol>
+                <li><input type="text" id="Paso1" placeholder="Escribe tu Respuesta"></li>
+                <li><input type="text" id="paso2" placeholder="Escribe tu Respuesta"></li>
+                <li><input type="text" id="paso3" placeholder="Escribe tu Respuesta"></li>
+            </ol>
+            <button onclick="verificarActividad(2)">Verificar</button>
+            <p id="resultadoActividad2" class="oculto"></p>
+
+          <h3>Actividad 3: ¿Qué es una videollamada?</h3>
+          <p>Selecciona la respuesta correcta:</p>
+          <label><input type="radio" name="videollamada" value="texto"> Enviar mensajes de texto.</label><br>
+          <label><input type="radio" name="videollamada" value="video"> Comunicarse por video y audio.</label><br>
+          <label><input type="radio" name="videollamada" value="musica"> Escuchar música.</label><br>
+          <button onclick="verificarActividad(3)">Verificar</button>
+          <p id="resultadoActividad3" class="oculto"></p>
+
+          <h3>Actividad 4: ¿Dónde descargas aplicaciones en tu teléfono?</h3>
+          <p>Selecciona la respuesta correcta:</p>
+          <label><input type="radio" name="descarga" value="tienda"> Tienda de aplicaciones.</label><br>
+          <label><input type="radio" name="descarga" value="navegador"> Navegador web.</label><br>
+          <label><input type="radio" name="descarga" value="documento"> Documento de texto.</label><br>
+          <button onclick="verificarActividad(4)">Verificar</button>
+          <p id="resultadoActividad4" class="oculto"></p>
+
+          <h3>Actividad 5: ¿Qué necesitas para conectarte a Wi-Fi?</h3>
+          <p>Selecciona la respuesta correcta:</p>
+          <label><input type="radio" name="wifi" value="cable"> Un cable USB.</label><br>      
+          <label><input type="radio" name="wifi" value="contraseña"> La contraseña de la red.</label><br>
+          <label><input type="radio" name="wifi" value="impresora"> Una impresora.</label><br>
+          <button onclick="verificarActividad(5)">Verificar</button>
+          <p id="resultadoActividad5" class="oculto"></p>
+          
+          <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+        
+        <section id="cuestionario" class="oculto">
+            <h2>Cuestionario de Aprendizaje</h2>
+            <p>Responde estas preguntas para medir tu progreso.</p>
+        
+            <div id="preguntasCuestionario">
+                </div>
+        
+            <button onclick="verificarCuestionario()">Verificar</button>
+            <p id="resultadoCuestionario" class="oculto"></p>
+        
+            <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+
+        <section id="preguntas" class="oculto">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Aquí encontrarás respuestas a las preguntas más comunes.</p>
+
+            <h3>¿Cómo enciendo mi laptop?</h3>
+            <p>Mantén presionado el botón de encendido por unos segundos.</p>
+
+            <h3>¿Cómo busco algo en Internet?</h3>
+            <p>Usa un navegador como Google Chrome y escribe lo que deseas buscar en la barra de búsqueda.</p>
+
+            <button onclick="mostrarSeccion('principal')">Regresar</button>
+        </section>
+        
+
+        <section id="recursos" class="oculto">
+            <h2>Recursos Adicionales</h2>
+            <p>Aquí encontrarás más material para reforzar tu aprendizaje:</p>
+
+            <button onclick="mostrarSeccion('principal')">Regresar</button
