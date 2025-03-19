@@ -1,0 +1,133 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #faebd7; /* Papaya Whip: un beige suave y cálido */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff; /* Blanco para el contenedor principal, buen contraste */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #007bff; /* Azul primario para títulos, buen contraste */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de registro */
+#registration-form {
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+    background-color: #f5f5dc; /* Beige claro para el formulario, suave */
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px; /* Aumentar el padding para facilitar el clic */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px; /* Aumentar el tamaño de la fuente para mejor lectura */
+}
+
+button {
+    background-color: #28a745; /* Verde para el botón de registro */
+    color: white;
+    padding: 15px 25px; /* Aumentar el padding del botón */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px; /* Aumentar el tamaño de la fuente del botón */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+
+/* Estilos para el contenido de la página */
+#main-page-content {
+    display: none;
+    margin-top: 30px;
+    text-align: left;
+    background-color: #e0f2f7; /* Light Cyan: un azul muy claro y suave para el fondo del contenido */
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.section-button {
+    background-color: #007bff; /* Azul para los botones de sección */
+    color: white;
+    padding: 18px 30px; /* Aumentar el padding del botón de sección */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 22px; /* Aumentar el tamaño de la fuente del botón de sección */
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+}
+
+.section-button:hover {
+    background-color: #0056b3;
+}
+
+.section-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: none;
+    background-color: #f9f9f9; /* Gris muy claro para el contenido de la sección */
+}
+
+.back-button {
+    background-color: #dc3545; /* Rojo para el botón de regreso */
+    color: white;
+    padding: 12px 20px; /* Aumentar el padding del botón de regreso */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px; /* Aumentar el tamaño de la fuente del botón de regreso */
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    width: 180px; /* Aumentar el ancho del botón de regreso */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #c82333;
+}
